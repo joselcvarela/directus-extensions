@@ -1,4 +1,4 @@
-# Live Preview LAN
+# Directus Extension Live Preview LAN
 
 This Directus extension allows to load resources from local network when using Live Preview
 
