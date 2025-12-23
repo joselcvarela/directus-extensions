@@ -1,0 +1,49 @@
+{
+  "name": "live-preview-lan",
+  "description": "Directus extension to load resources from local network when using Live Preview",
+  "icon": "extension",
+  "version": "1.0.0",
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-extension-interface",
+    "lan",
+    "live preview",
+    "live",
+    "preview",
+    "local",
+    "network",
+    "access",
+    "iframe"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joselcvarela/directus-extensions.git"
+  },
+  "author": {
+    "name": "José Varela",
+    "url": "https://www.joselcvarela.com"
+  },
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "directus:extension": {
+    "type": "interface",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": "^10.10.0"
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify",
+    "link": "directus-extension link",
+    "validate": "directus-extension validate"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "17.0.4",
+    "typescript": "^5.9.3",
+    "vue": "^3.5.26"
+  }
+}
